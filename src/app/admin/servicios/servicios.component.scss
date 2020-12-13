@@ -1,0 +1,29 @@
+@supports(object-fit: cover){
+   ::ng-deep .img-fluid{
+     height: 180px;
+      object-fit: cover;
+      object-position: center center;
+    }
+}
+
+.add{
+    height:393px ;
+}
+
+.new{
+    height: 250px;
+    width: 250px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    background-color:#00C851;
+}
+
+.new mdb-icon{
+    position:absolute; top:50%; left:50%; transform: translate(-50%, -50%);
+}
+
+.titulo{
+    border-bottom: solid 2px red;
+    font-weight: bold;
+}

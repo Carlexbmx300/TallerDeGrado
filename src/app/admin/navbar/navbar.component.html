@@ -1,0 +1,82 @@
+<!-- SideNav slide-out button -->
+
+<!--<nav class="nav flex-column blue lighten-5 py-4" >
+    <a class="nav-link" routerLink="/admin/miembros">Miembros</a>
+    <a class="nav-link" routerLink="/admin/servicios">Servicios</a>
+    <a class="nav-link" routerLink="/admin/usuarios">Usuarios</a>
+    <a class="nav-link disabled" href="#">Disabled</a>
+</nav>-->
+
+<header>
+
+    <!-- Navbar -->
+    <mdb-navbar [ngClass]="{'move':hide}" class="navbar fixed-top " SideClass="navbar fixed-top navbar-expand-lg navbar-light white ">
+      
+
+        <!-- Brand -->
+        <mdb-navbar-brand>
+
+        
+        <a class="navbar-brand waves-effect " (click)="sideMenu()" target="_blank">
+            <mdb-icon fas icon="bars"></mdb-icon>
+            <img src="../../../assets/img/logohorizontal.JPG" height="45" alt="">
+        </a>
+    </mdb-navbar-brand>
+        <!-- Collapse -->
+        
+
+        <!-- Links -->
+       <links>
+
+          <!-- Left -->
+          <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item dropdown" dropdown >
+                <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+                  <img src="../../../assets/img/perfil.jpg" alt="perfil" class="img-fluid rounded-circle z-depth-0">
+                   Edgar Zubieta Fernandez<span class="caret"></span></a>   
+                
+                <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                 
+                    <a class="dropdown-item waves-light" mdbWavesEffect>Cerrar sesion</a>
+                   
+                </div>
+                
+          </ul>
+        </links>
+          <!-- Right -->
+          
+
+      
+
+      
+    </mdb-navbar>
+    <!-- Navbar -->
+
+    <!-- Sidebar -->
+    <div class="sidebar-fixed position-fixed" [ngClass]="{'hideMenu':hide,'showMenu':!hide}">
+
+      <a class="logo-wrapper waves-effect">
+        <img src="../../../assets/img/report.JPG" class="img-fluid" alt="">
+      </a>
+
+      <div class="list-group list-group-flush">
+        <a routerLink="/admin/inicio" class="list-group-item active waves-effect">
+          <i class="fas fa-chart-pie mr-3"></i>ADMINISTRACION
+        </a>
+        <a routerLink="/admin/miembros" class="list-group-item list-group-item-action waves-effect">
+            <mdb-icon fas icon="user" class="mr-3"></mdb-icon>Miembros</a>
+        <a routerLink="/admin/servicios" class="list-group-item list-group-item-action waves-effect">
+            <mdb-icon fas icon="dumbbell" class="mr-3"></mdb-icon>Servicios</a>
+        <a routerLink="/admin/usuarios" class="list-group-item list-group-item-action waves-effect">
+            <mdb-icon fas icon="user-friends" class="mr-3"></mdb-icon>Usuarios</a>
+        <a routerLink="/admin/reportes" class="list-group-item list-group-item-action waves-effect">
+            <mdb-icon far icon="chart-bar" class="mr-3"></mdb-icon>Reportes</a>
+      </div>
+
+    </div>
+    <!-- Sidebar -->
+
+  </header>
+
+  
